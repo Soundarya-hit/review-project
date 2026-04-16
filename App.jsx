@@ -3,11 +3,12 @@ import React, { useState } from "react";
 const Home = () => {
   const [darkMode, setDarkMode] = useState(true);
 
+  // 🍔 FOOD PRODUCTS
   const products = [
-    { name: "Laptop", seller: "Tech Store", image: "https://via.placeholder.com/300" },
-    { name: "Mobile", seller: "Mobile World", image: "https://via.placeholder.com/300" },
-    { name: "Headphones", seller: "Audio Hub", image: "https://via.placeholder.com/300" },
-    { name: "Shoes", seller: "Fashion Mart", image: "https://via.placeholder.com/300" },
+    { name: "Fresh Veg Box", seller: "Green Harvest Farms", image: "https://via.placeholder.com/300" },
+    { name: "Organic Fruits Pack", seller: "Nature Basket", image: "https://via.placeholder.com/300" },
+    { name: "Gourmet Cheese", seller: "Dairy Delight", image: "https://via.placeholder.com/300" },
+    { name: "Frozen Ready Meals", seller: "QuickBite Kitchens", image: "https://via.placeholder.com/300" },
   ];
 
   return (
@@ -59,7 +60,7 @@ const Home = () => {
           z-index: 0;
         }
 
-        /* ================= DARK MODE (SPACE) ================= */
+        /* ================= DARK MODE ================= */
         .dark {
           position: relative;
           background: radial-gradient(circle at 20% 30%, #1e293b, #020617 80%);
@@ -79,7 +80,7 @@ const Home = () => {
           filter: blur(80px);
         }
 
-        /* ================= LIGHT MODE (SUNLIGHT) ================= */
+        /* ================= LIGHT MODE ================= */
         .light {
           position: relative;
           background: linear-gradient(to bottom, #fefce8, #e0f2fe);
@@ -258,13 +259,13 @@ const Home = () => {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">
-          <img src="https://via.placeholder.com/120x40?text=Logo" alt="Logo" />
+          <img src="https://via.placeholder.com/120x40?text=Food+Hub" alt="Logo" />
         </div>
 
         <ul className="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Orders</a></li>
           <li><a href="#">Login</a></li>
           <li><a href="#">Register</a></li>
           <li>
@@ -277,18 +278,18 @@ const Home = () => {
 
       {/* HERO */}
       <div className="hero">
-        <h1>Find Your Perfect Products</h1>
-        <p>Best deals from trusted sellers</p>
+        <h1>Discover Fresh Food & Groceries</h1>
+        <p>Farm fresh ingredients delivered to your door</p>
 
         <div className="search-box">
-          <input type="text" placeholder="Search products..." />
+          <input type="text" placeholder="Search food items..." />
           <button>Search</button>
         </div>
       </div>
 
       {/* CATEGORIES */}
       <div className="categories">
-        {["Electronics", "Fashion", "Sports", "Shoes", "Accessories"].map((cat, i) => (
+        {["Vegetables", "Fruits", "Dairy", "Bakery", "Meals"].map((cat, i) => (
           <div key={i} className="category">{cat}</div>
         ))}
       </div>
@@ -307,9 +308,7 @@ const Home = () => {
       </div>
 
       {/* FOOTER */}
-      <div className="footer">
-        
-      </div>
+      <div className="footer"></div>
     </div>
   );
 };
