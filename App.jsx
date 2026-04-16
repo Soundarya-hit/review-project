@@ -8,22 +8,22 @@ const Home = () => {
   {
     name: "Full meals",
     seller: "Green hotel",
-    image: "/images/a.jpg"
+    image: "/images/a.jpeg"
   },
   {
     name: "Pearl Millet Gruel",
     seller: "Nature Basket",
-    image: "/images/c.jpg"
+    image: "/images/c.jpeg"
   },
   {
     name: "kulipaniyaram",
     seller: "A2V",
-    image: "/images/b.jpg"
+    image: "/images/b.jpeg"
   },
   {
     name: "Pongal",
     seller: "QuickBite Kitchens",
-    image: "/images/d.jpg"
+    image: "/images/d.jpeg"
   }
 ];
 
@@ -275,7 +275,7 @@ const Home = () => {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">
-          <img src="/images/h.jpg" alt="Logo" />
+          <img src="/images/h.jpeg" alt="Logo" />
         </div>
 
         <ul className="nav-links">
