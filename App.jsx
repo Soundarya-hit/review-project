@@ -5,11 +5,27 @@ const Home = () => {
 
   // 🍔 FOOD PRODUCTS
   const products = [
-    { name: "Fresh Veg Box", seller: "Green Harvest Farms", image: "https://via.placeholder.com/300" },
-    { name: "Organic Fruits Pack", seller: "Nature Basket", image: "https://via.placeholder.com/300" },
-    { name: "Gourmet Cheese", seller: "Dairy Delight", image: "https://via.placeholder.com/300" },
-    { name: "Frozen Ready Meals", seller: "QuickBite Kitchens", image: "https://via.placeholder.com/300" },
-  ];
+  {
+    name: "Full meals",
+    seller: "Green hotel",
+    image: "/images/a.jpg"
+  },
+  {
+    name: "Pearl Millet Gruel",
+    seller: "Nature Basket",
+    image: "/images/c.jpg"
+  },
+  {
+    name: "kulipaniyaram",
+    seller: "A2V",
+    image: "/images/b.jpg"
+  },
+  {
+    name: "Pongal",
+    seller: "QuickBite Kitchens",
+    image: "/images/d.jpg"
+  }
+];
 
   return (
     <div className={darkMode ? "dark" : "light"}>
@@ -259,7 +275,7 @@ const Home = () => {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">
-          <img src="https://via.placeholder.com/120x40?text=Food+Hub" alt="Logo" />
+          <img src="/images/h.jpg" alt="Logo" />
         </div>
 
         <ul className="nav-links">
